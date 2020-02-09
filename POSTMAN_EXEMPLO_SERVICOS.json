@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "05b50f66-d3ad-484c-b43f-38cff48c3951",
+		"name": "Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Salvar Pedido - JSON",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n            {\n                \n                \"numeroDeControle\": 1,\n                \"nome\": \"Produto 1\",\n                \"valor\": 2,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 8,\n                \"nome\": \"Produto 8\",\n                \"valor\": 9,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 7,\n                \"nome\": \"Produto 7\",\n                \"valor\": 8,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 4,\n                \"nome\": \"Produto 4\",\n                \"valor\": 5,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 2,\n                \"nome\": \"Produto 2\",\n                \"valor\": 3,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 5,\n                \"nome\": \"Produto 5\",\n                \"valor\": 6,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 6,\n                \"nome\": \"Produto 6\",\n                \"valor\": 7,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 3,\n                \"nome\": \"Produto 3\",\n                \"valor\": 4,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 9,\n                \"nome\": \"Produto 9\",\n                \"valor\": 10,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            },\n            {\n                \n                \"numeroDeControle\": 0,\n                \"nome\": \"Produto 0\",\n                \"valor\": 1,\n                \"quantidade\": 1,\n                \"codigoDoCliente\": 45\n              \n            }\n        ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api-pedido/pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-pedido",
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedidos - JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-pedido/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-pedido",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar Pedido - XML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Pedidos>\n    <Pedido id=\"1\">\n        <numeroDeControle>0</numeroDeControle>\n        <nome>Produto 0</nome>\n        <valor>1.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>0</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"2\">\n        <numeroDeControle>1</numeroDeControle>\n        <nome>Produto 1</nome>\n        <valor>2.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>1</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"3\">\n        <numeroDeControle>2</numeroDeControle>\n        <nome>Produto 2</nome>\n        <valor>3.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>2</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"4\">\n        <numeroDeControle>3</numeroDeControle>\n        <nome>Produto 3</nome>\n        <valor>4.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>3</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"5\">\n        <numeroDeControle>4</numeroDeControle>\n        <nome>Produto 4</nome>\n        <valor>5.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>4</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"6\">\n        <numeroDeControle>5</numeroDeControle>\n        <nome>Produto 5</nome>\n        <valor>6.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>5</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"7\">\n        <numeroDeControle>6</numeroDeControle>\n        <nome>Produto 6</nome>\n        <valor>7.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>6</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"8\">\n        <numeroDeControle>7</numeroDeControle>\n        <nome>Produto 7</nome>\n        <valor>8.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>7</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"9\">\n        <numeroDeControle>8</numeroDeControle>\n        <nome>Produto 8</nome>\n        <valor>9.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>8</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n    <Pedido id=\"10\">\n        <numeroDeControle>9</numeroDeControle>\n        <nome>Produto 9</nome>\n        <valor>10.00</valor>\n        <quantidade>1</quantidade>\n        <codigoDoCliente>9</codigoDoCliente>\n        <dataDeCadastro>2020-02-09T18:14:52.162+0000</dataDeCadastro>\n    </Pedido>\n</Pedidos>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api-pedido/pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-pedido",
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedidos - XML",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-pedido/pedidos-xml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-pedido",
+						"pedidos-xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar 10 automaticamente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
